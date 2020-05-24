@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SetDatabaseConnectionController">
+   <children>
+      <TextField fx:id="adressTextField" layoutX="57.0" layoutY="76.0" />
+      <TextField fx:id="usernameTextField" layoutX="57.0" layoutY="156.0" />
+      <TextField fx:id="passwordTextField" layoutX="57.0" layoutY="239.0" />
+      <Button fx:id="insertConnectionDataButton" layoutX="58.0" layoutY="323.0" mnemonicParsing="false" onAction="#insertConnection" text="OK" />
+      <Button fx:id="backButton" layoutX="155.0" layoutY="323.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Zurück" />
+      <Label layoutX="57.0" layoutY="45.0" text="Bitte die Adresse der Datenbank eingeben:" />
+      <Label layoutX="60.0" layoutY="127.0" text="Bitte den Benutzernamen eingeben:" />
+      <Label layoutX="60.0" layoutY="213.0" text="Bitte das Passwort eingeben:" />
+      <Label fx:id="errorMessageLabel" layoutX="60.0" layoutY="283.0" prefHeight="17.0" prefWidth="319.0" />
+   </children>
+</AnchorPane>

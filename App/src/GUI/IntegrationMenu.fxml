@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.IntegrationMenuController">
+   <children>
+      <Button fx:id="combineFmAndLogicalComponentButton" layoutX="91.0" layoutY="89.0" mnemonicParsing="false" onAction="#combineFmAndLogicalComponent" text="Fehlermodelle und funktionale Komponenten zusammenfügen" />
+      <Button fx:id="mapPortsToFailureTypesButton" layoutX="91.0" layoutY="155.0" mnemonicParsing="false" onAction="#mapPortsToFailureTypes" text="Ports mit Failure Typen verbinden" />
+      <Button fx:id="combineCFTsButton" layoutX="91.0" layoutY="223.0" mnemonicParsing="false" onAction="#combineCFTs" text="Zusammenfügen von CFTs" />
+      <Button fx:id="backButton" layoutX="91.0" layoutY="332.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Zurück" />
+   </children>
+</AnchorPane>

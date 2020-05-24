@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CombineFmAndLogicalComponentsController">
+   <children>
+      <Button fx:id="backButton" layoutX="54.0" layoutY="331.0" mnemonicParsing="false" onAction="#backToIntegrationMenu" text="Zurück" />
+      <ListView fx:id="componentListView" layoutX="54.0" layoutY="56.0" onMouseClicked="#componentClicked" prefHeight="232.0" prefWidth="190.0" />
+      <ListView fx:id="cftListView" layoutX="300.0" layoutY="56.0" onMouseClicked="#fmClicked" prefHeight="232.0" prefWidth="190.0" />
+      <Button fx:id="portMatchButton" layoutX="464.0" layoutY="331.0" mnemonicParsing="false" onAction="#matchPorts" text="Verbinden" />
+      <Label fx:id="componentLabel" layoutX="54.0" layoutY="304.0" prefHeight="17.0" prefWidth="190.0" />
+      <Label fx:id="fmLabel" layoutX="300.0" layoutY="304.0" prefHeight="17.0" prefWidth="190.0" />
+      <Label layoutX="20.0" layoutY="21.0" text="Logische Komponenten mit Fehlermodellen verbinden" />
+   </children>
+</AnchorPane>

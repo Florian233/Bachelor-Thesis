@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CombineCFTsController">
+   <children>
+      <Label layoutX="26.0" layoutY="23.0" text="Zusammenfügen von Fehlermodellen von logischen Komponenten mit mehreren Fehlermodellen" />
+      <Label layoutX="26.0" layoutY="67.0" text="Mögliche logische Komponenten zur Auswahl:" />
+      <ListView fx:id="componentsListView" layoutX="26.0" layoutY="93.0" onMouseClicked="#componentListViewClicked" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="backButton" layoutX="26.0" layoutY="355.0" mnemonicParsing="false" onAction="#backToIntegrationMenu" text="Zurück" />
+      <Button fx:id="mergeFMsButton" layoutX="522.0" layoutY="355.0" mnemonicParsing="false" onAction="#mergeFMs" text="OK" />
+      <ListView fx:id="failureModelListView" layoutX="311.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="311.0" layoutY="67.0" text="Fehlermodelle der Komponente:" />
+      <Label layoutX="221.0" layoutY="327.0" text="Zum Zusammenfügen der ausgewählten Fehlermodelle OK klicken" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PortMatchingController">
+   <children>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="560.0" mnemonicParsing="false" onAction="#backToCombineFmAndLogicalComponents" text="Zurück" />
+      <Button fx:id="matchPortsButton" layoutX="677.0" layoutY="560.0" mnemonicParsing="false" onAction="#matchPorts" text="OK" />
+      <ListView fx:id="inportListView" layoutX="68.0" layoutY="60.0" onMouseClicked="#inportClicked" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="inputListView" layoutX="321.0" layoutY="60.0" onMouseClicked="#inputClicked" prefHeight="200.0" prefWidth="200.0" />
+      <Separator layoutY="277.0" prefHeight="8.0" prefWidth="735.0" />
+      <Label layoutX="19.0" layoutY="21.0" text="Inputs der logischen Komponente auf Inputs des CFT abbilden:" />
+      <Label layoutX="19.0" layoutY="291.0" text="Outputs der logischen Komponente auf Outputs der CFT abbilden:" />
+      <Label layoutX="544.0" layoutY="60.0" text="Verschieben der In- und Outputs " />
+      <Label layoutX="544.0" layoutY="77.0" text="mittels Doppelklick auf den" />
+      <Label layoutX="544.0" layoutY="94.0" text="zu verschiebenden In/Output" />
+      <ListView fx:id="outportListView" layoutX="68.0" layoutY="331.0" onMouseClicked="#outportClicked" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="outputListView" layoutX="321.0" layoutY="331.0" onMouseClicked="#outputClicked" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="544.0" layoutY="111.0" text="und Doppelklick auf den richtigen" />
+      <Label layoutX="544.0" layoutY="128.0" text="Port." />
+      <Label fx:id="selectedInputLabel" layoutX="543.0" layoutY="216.0" prefHeight="17.0" prefWidth="180.0" />
+      <Label fx:id="selectedOutputLabel" layoutX="543.0" layoutY="496.0" prefHeight="17.0" prefWidth="177.0" />
+      <Label layoutX="543.0" layoutY="199.0" text="Ausgewähltes Element:" />
+      <Label layoutX="543.0" layoutY="479.0" text="Ausgewähltes Element:" />
+   </children>
+</AnchorPane>

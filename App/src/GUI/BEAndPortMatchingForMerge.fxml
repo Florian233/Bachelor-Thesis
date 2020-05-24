@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.BEAndPortMatchingForMergeController">
+    <children>
+        <Separator layoutX="5.0" layoutY="291.0" prefHeight="3.0" prefWidth="1030.0" />
+      <Button fx:id="backButton" layoutX="29.0" layoutY="573.0" mnemonicParsing="false" onAction="#backToMergeCFTMenu" text="Zurück" />
+      <Button fx:id="mergeFMButton" layoutX="829.0" layoutY="573.0" mnemonicParsing="false" onAction="#mergeFM" text="Fehlermodelle zusammenführen" />
+      <ListView fx:id="beFM1ListView" layoutX="29.0" layoutY="51.0" onMouseClicked="#be1Clicked" prefHeight="202.0" prefWidth="161.0" />
+      <ListView fx:id="beFM2ListView" layoutX="213.0" layoutY="52.0" onMouseClicked="#be2Clicked" prefHeight="202.0" prefWidth="161.0" />
+      <ListView fx:id="inputFM1ListView" layoutX="29.0" layoutY="349.0" onMouseClicked="#input1Clicked" prefHeight="202.0" prefWidth="161.0" />
+      <ListView fx:id="inputFM2ListView" layoutX="213.0" layoutY="349.0" onMouseClicked="#input2Clicked" prefHeight="202.0" prefWidth="161.0" />
+      <ListView fx:id="fmInstance1ListView" layoutX="541.0" layoutY="51.0" onMouseClicked="#instance1Clicked" prefHeight="202.0" prefWidth="161.0" />
+      <ListView fx:id="fmInstance2ListView" layoutX="730.0" layoutY="51.0" onMouseClicked="#instance2Clicked" prefHeight="202.0" prefWidth="161.0" />
+      <ListView fx:id="outputFM1ListView" layoutX="541.0" layoutY="349.0" onMouseClicked="#output1Clicked" prefHeight="202.0" prefWidth="161.0" />
+      <ListView fx:id="outputFM2ListView" layoutX="730.0" layoutY="349.0" onMouseClicked="#output2Clicked" prefHeight="202.0" prefWidth="161.0" />
+      <Label layoutX="29.0" layoutY="21.0" text="Basic Events:" />
+      <Label layoutX="29.0" layoutY="318.0" text="Inputs:" />
+      <Label layoutX="541.0" layoutY="21.0" text="CFT Instanzen:" />
+      <Label layoutX="541.0" layoutY="318.0" text="Outputs:" />
+      <Button fx:id="beMatchButton" layoutX="397.0" layoutY="229.0" mnemonicParsing="false" onAction="#matchBE" text="OK" />
+      <Button fx:id="inputMatchButton" layoutX="397.0" layoutY="526.0" mnemonicParsing="false" onAction="#matchInput" text="OK" />
+      <Button fx:id="instanceMatchButton" layoutX="923.0" layoutY="229.0" mnemonicParsing="false" onAction="#matchInstance" text="OK" />
+      <Button fx:id="outputMatchButton" layoutX="923.0" layoutY="526.0" mnemonicParsing="false" onAction="#matchOutput" text="OK" />
+      <Label layoutX="437.0" layoutY="577.0" text="Alle nicht zusammengeführte Elemente werden auf keines abgebildet!" />
+    </children>
+</AnchorPane>

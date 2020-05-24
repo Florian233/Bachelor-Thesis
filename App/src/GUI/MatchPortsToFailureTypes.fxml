@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MatchPortsToFailureTypesController">
+   <children>
+      <Button fx:id="mappingButton" layoutX="647.0" layoutY="295.0" mnemonicParsing="false" onAction="#mapPortToFailureType" text="OK" />
+      <Button fx:id="backButton" layoutX="32.0" layoutY="344.0" mnemonicParsing="false" onAction="#backToIntegrationMenu" text="Zurück" />
+      <Label fx:id="typeLabel" layoutX="376.0" layoutY="299.0" prefHeight="17.0" prefWidth="141.0" />
+      <Label fx:id="portLabel" layoutX="121.0" layoutY="299.0" prefHeight="17.0" prefWidth="164.0" />
+      <Label layoutX="58.0" layoutY="299.0" text="Typ von" />
+      <Label layoutX="300.0" layoutY="299.0" text="setzen als" />
+      <ListView fx:id="portListView" layoutX="267.0" layoutY="53.0" onMouseClicked="#portClicked" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="failureTypeListView" layoutX="493.0" layoutY="53.0" onMouseClicked="#failureTypeClicked" prefHeight="200.0" prefWidth="200.0" />
+      <ListView fx:id="logicalComponentsListView" layoutX="33.0" layoutY="53.0" onMouseClicked="#componentFmListViewClicked" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

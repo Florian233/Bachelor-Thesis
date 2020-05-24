@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.ESSaRelProjectReaderController">
+    <children>
+        <Button fx:id="readESSaRelProjectButton" layoutX="64.0" layoutY="268.0" mnemonicParsing="false" onAction="#readESSaRelProject" text="OK" />
+        <Button fx:id="backButton" layoutX="183.0" layoutY="268.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Zurück" />
+        <Label fx:id="errorMessageLabel" layoutX="62.0" layoutY="200.0" prefHeight="17.0" prefWidth="388.0" />
+        <Label layoutX="64.0" layoutY="96.0" text="Bitte Pfad des ESSaRel Projekts (repository.xml) angeben:" />
+        <TextField fx:id="pathTextField" layoutX="64.0" layoutY="131.0" prefHeight="25.0" prefWidth="289.0" />
+        <Button fx:id="fileChooserButton" layoutX="365.0" layoutY="131.0" mnemonicParsing="false" onAction="#chooseFile" text="..." />
+      <ListView fx:id="displayResultListView" layoutX="338.0" layoutY="281.0" prefHeight="95.0" prefWidth="250.0" />
+      <Label layoutX="336.0" layoutY="260.0" text="Komponenten ohne Realisierung bzw Interface:" />
+    </children>
+</AnchorPane>

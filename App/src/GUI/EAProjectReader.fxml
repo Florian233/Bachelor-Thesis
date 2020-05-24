@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.EAProjectReaderController">
+   <children>
+      <Button fx:id="readEAProjectButton" layoutX="64.0" layoutY="268.0" mnemonicParsing="false" onAction="#readEAProject" text="OK" />
+      <Button fx:id="backButton" layoutX="183.0" layoutY="268.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Zurück" />
+      <Label fx:id="errorMessageLabel" layoutX="62.0" layoutY="200.0" prefHeight="17.0" prefWidth="388.0" />
+      <Label layoutX="64.0" layoutY="96.0" text="Bitte Pfad des EA Projekt angeben:" />
+      <TextField fx:id="pathTextField" layoutX="64.0" layoutY="131.0" prefHeight="25.0" prefWidth="289.0" />
+      <Button fx:id="fileChooserButton" layoutX="365.0" layoutY="131.0" mnemonicParsing="false" onAction="#chooseFile" text="..." />
+      <ListView fx:id="functComponentsListView" layoutX="332.0" layoutY="268.0" prefHeight="116.0" prefWidth="183.0" />
+      <Label layoutX="332.0" layoutY="241.0" text="Funktionale Komponenten ohne Fehlermodell:" />
+   </children>
+</AnchorPane>

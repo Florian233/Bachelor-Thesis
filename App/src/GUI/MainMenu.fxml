@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainMenuController">
+   <children>
+      <Button fx:id="DatabaseButton" layoutX="50.0" layoutY="50.0" mnemonicParsing="false" onAction="#setDatabase" text="Datenbankverbindung setzen" />
+      <Button fx:id="readEAProjectButton" layoutX="50.0" layoutY="97.0" mnemonicParsing="false" onAction="#readEAProject" text="EA Projekt auslesen" />
+      <Button fx:id="readESSaRelProjectButton" layoutX="50.0" layoutY="153.0" mnemonicParsing="false" onAction="#readESSaRelProject" text="ESSaRel Projekt auslesen" />
+      <Button fx:id="integrationButton" layoutX="50.0" layoutY="200.0" mnemonicParsing="false" onAction="#integrateModels" text="Integration der Modelle" />
+      <Button fx:id="clearDatabaseButton" layoutX="50.0" layoutY="253.0" mnemonicParsing="false" onAction="#clearDatabase" text="Datenbank leeren" />
+      <Label layoutX="391.0" layoutY="54.0" prefHeight="17.0" prefWidth="190.0" text="Adresse der Datenbank:" />
+      <Label fx:id="databaseAdressOutput" layoutX="391.0" layoutY="80.0" prefHeight="17.0" prefWidth="190.0" />
+      <Label layoutX="391.0" layoutY="114.0" text="Benutzername der Datenbank:" />
+      <Label fx:id="databaseUsernameOutput" layoutX="391.0" layoutY="136.0" prefHeight="17.0" prefWidth="172.0" />
+      <Label layoutX="391.0" layoutY="170.0" text="Passwort der Datenbank:" />
+      <Label fx:id="batabasePasswortOutput" layoutX="391.0" layoutY="192.0" prefHeight="17.0" prefWidth="190.0" />
+      <Label fx:id="clearDatabaseOutput" layoutX="272.0" layoutY="257.0" prefHeight="17.0" prefWidth="314.0" text="Bitte zuerst die Datenbankverbindung setzen!" />
+   </children>
+</AnchorPane>
